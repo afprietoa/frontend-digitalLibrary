@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CardSubsc from './Components/CardSubsc'
+import { Container } from "react-bootstrap";
+import SearchBar from './Components/SearchBar';
+import NavbarOffcanvas from './Components/NavbarOffcanvas';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <NavbarOffcanvas />
+      <Container className="mt-5">
+        <div className="title-main">
+          <h2>Tus institutos (Sedes)</h2>
+          <h4>4/5 sedes asignadas</h4>
+        </div>
+
+        <div className="box-aviso"><strong>Su subscripción finaliza el<br /> 22-09-15</strong></div>
+
+        <div className="title-searcher"><h5>Filtra por institutos y podras ver los cursos asignados</h5></div>
+
+        <SearchBar />
+        <CardSubsc />
+
+      </Container>
+    </>
+  )
 }
 
-export default App;
+export default App
+
