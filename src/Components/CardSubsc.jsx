@@ -6,16 +6,16 @@ import user from "../assets/iconos/usuario.svg";
 import book from "../assets/iconos/libro.svg"
 import teacher from "../assets/iconos/carita-redonda.svg"
 import statistics from "../assets/iconos/estadisticas-barra.png"
-import data from "../data/data"
 
-const CardSubsc = () => {
 
-  console.log(data)
+const CardSubsc = ({institut}) => {
+
+  console.log(institut)
 
   return (
     <div className="container-cards">
     {
-      data.map((institute,idx)=>(
+      institut.map((institute,idx)=>(
 
         <Card key={idx} style={{ width: "30rem", margin: '1rem' }} className=" card text-black ">
         <Card.Header className="card__header text-center" style={{ background: institute.color }} >Sede primaria {institute.nombre}</Card.Header>
