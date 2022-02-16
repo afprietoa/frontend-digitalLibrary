@@ -21,7 +21,7 @@ const CardSubsc = ({institut}) => {
         <Card.Header className="card__header text-center" style={{ background: institute.color }} >Sede primaria {institute.nombre}</Card.Header>
         <Card.Body>
 
-          <Row className="m-2">
+          <Row className="item m-2">
             <Col>
               <Card.Text>
               <img className="icon" src={graduation} alt="..."/> {institute.cursos.length} cursos
@@ -32,7 +32,7 @@ const CardSubsc = ({institut}) => {
               <Card.Text className="more-info">ver todos</Card.Text>
             </Col>
           </Row>
-          <Row className="m-2">
+          <Row className="item m-2">
             <Col>
               <Card.Text>
               <img className="icon" src={user} alt="..."/> {institute.estudiantes.length} estudiantes
@@ -43,7 +43,7 @@ const CardSubsc = ({institut}) => {
               <Card.Text className="more-info">ver todos</Card.Text>
             </Col>
           </Row>
-          <Row className="m-2">
+          <Row className="item m-2">
             <Col>
               <Card.Text>
               <img className="icon" src={book} alt="..."/> {institute.librosAsignados} libros asignados
@@ -54,7 +54,7 @@ const CardSubsc = ({institut}) => {
               <Card.Text className="more-info">ver todos</Card.Text>
             </Col>
           </Row>
-          <Row className="m-2">
+          <Row className="item m-2">
             
             <Col>
               <Card.Text>

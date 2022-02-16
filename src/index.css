@@ -7,7 +7,9 @@ body{
   font-family: Roboto;
   font-style:normal;
   font-weight: bold;
-  background-color: var(--primary);
+  background: url('./assets/images/backBoton.png');
+  background-repeat: no-repeat;
+  background-size: auto;
   
 }
 .container-cards{
@@ -20,7 +22,7 @@ body{
   background:rgba(128, 128, 128, 0.13);
 }
 .card__header{
-  background-image: linear-gradient(rgba(139,195,74,.60) 0%, rgba(139,195,74,.60) 100%),  url('https://raw.githubusercontent.com/afprietoa/TechTest-Assets/main/Frontend/images/background.png');
+  background-image:  url('https://raw.githubusercontent.com/afprietoa/TechTest-Assets/main/Frontend/images/background.png');
    background-size: cover;
    background-repeat: no-repeat;
   background-position: center 35%;
@@ -110,4 +112,8 @@ border:none;
     vertical-align: top;
     border-radius: 100%;
     border: 5px solid gray;
+}
+.item{
+  border-bottom: 3px solid  #fff;
+  padding: 0.5em 0 0.5em 0;
 }
